@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>@ViewData["Title"] | Hunddrömmar</title>
+</head>
+<body>
+<div class="container">
+    @**Navigering**@
+    <nav class="navbar" aria-label="huvudmeny">
+        <a asp-asp-controller="Home" asp-action="Index" id="logo"><img src="~/images/dologo2.png" alt=""></a>
+        <ul class="navMenu">
+            @**länkar med asp-action**@
+                 <li class="navItem"><a  asp-asp-controller="Home" asp-action="Index" class="navLink">Hem</a></li>
+                <li class="navItem"><a asp-asp-controller="Home" asp-action="Adoption" class="navLink">Adoption</a></li>
+             <li class="navItem"><a asp-asp-controller="Home" asp-action="Dogs" class="navLink">Hundar</a></li>
+    
+        </ul>
+         
+<div class="hamburger" >
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</div>
+    </nav>
+
+
+
+ <div class="page">
+        @RenderBody()
+</div>
+ 
+
+
+
+</div>
+  
+    <script type="module" src="~/js/menu.js"></script>
+
+ <footer>
+    <p>Lösning moment 2 Viola Falk | Webbutveckling med .NET</p>
+ </footer>
+</body>
+</html>

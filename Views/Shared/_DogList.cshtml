@@ -1,0 +1,39 @@
+ @model List<moment2.Models.DogModel>
+ <div class="dogsContainer">
+<article>
+
+    <h2>Vi söker ett nytt hem</h2>
+
+    <div class="brownLine"></div>
+
+<table>
+    <thead>
+        <tr>
+        <th>Namn:</th>
+        <th>Ras:</th>
+        <th>År:</th>
+        <th>Vacinerad:</th>
+        <th>Födelsedatum</th>
+        </tr>
+    </thead>
+    <tbody>
+@**Loppar igenom lista med hundar från modellen*@
+    @foreach(var dog in Model) {
+           <tr>
+            @**Skirver ut hundarna till en tavell*@
+        <td>@dog.Name</td>
+        <td>@dog.Breed</td>
+        <td>@dog.Age år</td>
+        @**Ändrar utskrift till Ja eller nej**@
+         <td>@(dog.IsVaccinated ? "Ja" : "Nej")</td>
+    @**Ändrar utskrift till korrekt format**@
+       <td>@dog.BirthDate.Value.ToString("yyyy/MM/dd")</td>
+            </tr>
+    }
+
+    </tbody>
+</table>
+@**Länk till adoptions sidan*@
+    <a asp-action="Adoption"  class="brownBtn">Adoption</a>
+    </article>
+</div> 

@@ -1,0 +1,73 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/violafalk/Documents/Webbutveckling/NET/moment2/wwwroot/css/main.css",
+      "PackagePath": "staticwebassets/css/main.css"
+    },
+    {
+      "Id": "/Users/violafalk/Documents/Webbutveckling/NET/moment2/wwwroot/images/dog1.webp",
+      "PackagePath": "staticwebassets/images/dog1.webp"
+    },
+    {
+      "Id": "/Users/violafalk/Documents/Webbutveckling/NET/moment2/wwwroot/images/dog2.webp",
+      "PackagePath": "staticwebassets/images/dog2.webp"
+    },
+    {
+      "Id": "/Users/violafalk/Documents/Webbutveckling/NET/moment2/wwwroot/images/doglogo.png",
+      "PackagePath": "staticwebassets/images/doglogo.png"
+    },
+    {
+      "Id": "/Users/violafalk/Documents/Webbutveckling/NET/moment2/wwwroot/images/doglogo2.png",
+      "PackagePath": "staticwebassets/images/doglogo2.png"
+    },
+    {
+      "Id": "/Users/violafalk/Documents/Webbutveckling/NET/moment2/wwwroot/images/dologo2.png",
+      "PackagePath": "staticwebassets/images/dologo2.png"
+    },
+    {
+      "Id": "/Users/violafalk/Documents/Webbutveckling/NET/moment2/wwwroot/images/herobild.webp",
+      "PackagePath": "staticwebassets/images/herobild.webp"
+    },
+    {
+      "Id": "/Users/violafalk/Documents/Webbutveckling/NET/moment2/wwwroot/images/hundbild1.webp",
+      "PackagePath": "staticwebassets/images/hundbild1.webp"
+    },
+    {
+      "Id": "/Users/violafalk/Documents/Webbutveckling/NET/moment2/wwwroot/images/hundbild2.webp",
+      "PackagePath": "staticwebassets/images/hundbild2.webp"
+    },
+    {
+      "Id": "/Users/violafalk/Documents/Webbutveckling/NET/moment2/wwwroot/images/pexels-son-tung-tran-6507650.jpg",
+      "PackagePath": "staticwebassets/images/pexels-son-tung-tran-6507650.jpg"
+    },
+    {
+      "Id": "/Users/violafalk/Documents/Webbutveckling/NET/moment2/wwwroot/images/stor_bild.jpg",
+      "PackagePath": "staticwebassets/images/stor_bild.jpg"
+    },
+    {
+      "Id": "/Users/violafalk/Documents/Webbutveckling/NET/moment2/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "/Users/violafalk/Documents/Webbutveckling/NET/moment2/wwwroot/js/menu.js",
+      "PackagePath": "staticwebassets/js/menu.js"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.moment2.props",
+      "PackagePath": "build\\moment2.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.moment2.props",
+      "PackagePath": "buildMultiTargeting\\moment2.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.moment2.props",
+      "PackagePath": "buildTransitive\\moment2.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.moment2.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

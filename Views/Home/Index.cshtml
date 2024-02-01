@@ -1,0 +1,16 @@
+@model List<moment2.Models.DogModel>
+@{
+    ViewData["Title"] = "Startsidan";
+}
+@*Partial för header bild*@
+@Html.Partial("_HeaderImg")
+    <main>
+   <h1>Hund drömmar</h1>
+    <div class="pinkLine"></div>
+    <p>Här på hund drömmar ger vi hemlösa hundar ett nytt hem. Hund drömmar är en ideel förening som omplacerar svenska hundar och räddar utsatta hundar runt om i Sverige. Föreningen grundades 2010 med det stora målet att rädda hundar och ge de ett nytt hem. 
+
+        Vill du hjälpa en hund och samtidigt få en kär familjemedlem?</p>
+    <a asp-action="Dogs" class="pinkBtn">Om oss</a>
+    </main>
+
+    @Html.Partial("_DogList")

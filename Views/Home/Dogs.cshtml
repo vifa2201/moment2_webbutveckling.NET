@@ -1,0 +1,72 @@
+@model moment2.Models.DogModel
+
+@{
+    ViewData["Title"] = "Hundar";
+  //listar med hundraser  att  välja i select
+     List<string> dogBreeds = new List<string>
+    {
+       "Afghan Hound", "Beagle", 
+       "Bernese Mountain Dog", "Border Collie", 
+       "Boxer", "Cavalier King Charles Spaniel",
+        "Dachshund", "German Shepherd", 
+        "Golden Retriever", "Labrador Retriever", "Maltese", 
+        "Pembroke Welsh Corgi", "Pomeranian", 
+        "Pudel", "Rottweiler", "Saint Bernard", "Siberian Husky",
+         "Terrier", "Vizsla"
+    };
+}
+
+<main>
+<h1>Hundar</h1>
+<div class="pinkLine"></div>
+<p>Hunddrömmar strävar efter att förena hemlösa hundar med kärleksfulla familjer. Vi är dedikerade till att främja ansvarsfull adoption och skapa lyckliga slut för både hundar och människor. 
+</p>
+</main>
+<div class="formContainer">
+  <h2>Lägg till hund</h2>
+ <p class="sucess"> @ViewBag.Message </p>
+ @**Formulär*@
+<form method="post">
+   @**Anger specifika felmeddelande*@
+    <div asp-validation-summary="ModelOnly"></div>
+
+     <span asp-validation-for="Name"></span>
+     <br>
+    <label asp-for="Name"></label>
+    <input asp-for="Name" placeholder="Hundens namn:">
+ 
+      <span asp-validation-for="Breed"></span>
+       <br> 
+     <label asp-for="Breed"></label>
+      @**Använder lista för hundraser*@
+      <select asp-for="Breed" asp-items="@(new SelectList(dogBreeds))">
+     <option disabled selected>Välj en ras</option>
+    </select>
+
+    <span asp-validation-for="Age"></span>
+    <br>
+     <label asp-for="Age"></label>
+    <input asp-for="Age" placeholder="Hundens ålder:">
+   
+      <span asp-validation-for="Color"></span>
+    <br>
+     <label asp-for="Color"></label>
+    <input asp-for="Color" placeholder="Hundens färg/färger:">
+  
+       <span asp-validation-for="BirthDate" ></span>
+    <br>
+     <label asp-for="BirthDate"></label>
+    <input asp-for="BirthDate" type="date">
+
+    <br>
+      <label asp-for="IsVaccinated" id="check"></label>
+    <input asp-for="IsVaccinated" >
+     <span asp-validation-for="IsVaccinated"></span>
+     <br>
+    <input type="submit" value="Lägg till hund">
+</form>
+</div>
+
+
+ 
+
